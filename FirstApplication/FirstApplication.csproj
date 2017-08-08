@@ -182,15 +182,6 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201708062343191_InitialCreate.cs" />
-    <Compile Include="Migrations\201708062343191_InitialCreate.Designer.cs">
-      <DependentUpon>201708062343191_InitialCreate.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201708070529303_AddRatings.cs" />
-    <Compile Include="Migrations\201708070529303_AddRatings.Designer.cs">
-      <DependentUpon>201708070529303_AddRatings.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\DataContext.cs" />
     <Compile Include="Models\Rating.cs" />
@@ -203,6 +194,10 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\comp20071.mdf" />
+    <Content Include="App_Data\comp20071_log.ldf">
+      <DependentUpon>comp20071.mdf</DependentUpon>
+    </Content>
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -295,22 +290,12 @@
     <Content Include="Views\Ratings\Edit.cshtml" />
     <Content Include="Views\Ratings\Index.cshtml" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="App_Data\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
     <Content Include="Scripts\jquery-3.1.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.1.1.min.map" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Migrations\201708062343191_InitialCreate.resx">
-      <DependentUpon>201708062343191_InitialCreate.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201708070529303_AddRatings.resx">
-      <DependentUpon>201708070529303_AddRatings.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
